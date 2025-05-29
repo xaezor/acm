@@ -311,7 +311,17 @@ const NetworkAnimation = () => {
     <canvas
       ref={canvasRef}
       className="w-full h-screen cursor-pointer"
-      style={{marginTop: "2rem", background: 'transparent'}}
+      style={{
+        marginTop: "2rem", 
+        background: 'transparent',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        zIndex: 50,
+        pointerEvents: 'auto'
+      }}
     />
   );
 };
